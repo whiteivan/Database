@@ -16,12 +16,14 @@ static int32_t read_full(int fd, char* buf, size_t n){
         if(rv <= 0){
             return -1;//error
         }
-        assert((ssize_t)rv <= n);
-        n -= (ssize_t)rv;
+        assert((size_t)rv <= n);
+        n -= (size_t)rv;
         buf += rv;
     }
     return 0;
 }
+
+static int32_t write_all
 
 static void msg(const char *msg) {
     fprintf(stderr, "%s\n", msg);
