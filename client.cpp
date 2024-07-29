@@ -58,16 +58,10 @@ int main() {
     if (rv) {
         die("connect");
     }
-
-    char msg[] = "hello";
-    write(fd, msg, strlen(msg));
-
-    char rbuf[64] = {};
-    ssize_t n = read(fd, rbuf, sizeof(rbuf) - 1);
-    if (n < 0) {
-        die("read");
+    int32_t err = query(fd,"hello");
+    if(err){
+        msg("query() error");
     }
-    printf("server says: %s\n", rbuf);
     close(fd);
     return 0;
 }
