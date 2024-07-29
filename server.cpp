@@ -12,7 +12,6 @@
 #include "declaration.h"
 
 
-const size_t k_max_msg = 4096;
 
 static int32_t one_request(int connfd){
     char rbuf[4 + k_max_msg + 1];
