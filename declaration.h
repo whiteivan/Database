@@ -9,6 +9,7 @@
 #include <sys/socket.h>
 #include <netinet/ip.h>
 #include <assert.h>
+#include "Conn.h"
 
 static int32_t read_full(int fd, char* buf, size_t n);
 static int32_t one_request(int connfd);
