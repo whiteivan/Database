@@ -58,7 +58,15 @@ int main() {
     if (rv) {
         die("connect");
     }
-    int32_t err = query(fd,"hello");
+    int32_t err = query(fd,"hello1");
+    if(err){
+        msg("query() error");
+    }
+    err = query(fd,"hello2");
+    if(err){
+        msg("query() error");
+    }
+    err = query(fd,"hello3");
     if(err){
         msg("query() error");
     }
