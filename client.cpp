@@ -9,7 +9,7 @@ static int32_t query(int fd, const char* text){
     char wbuf[4 + k_max_msg];
     memcpy(wbuf, &len, 4);
     memcpy(&wbuf[4], text, len);
-    if (int32_t err = write(fd, wbuf, 4 + len)){
+    if (int32_t err = write_all(fd, wbuf, 4 + len)){
         return err;
     }
 

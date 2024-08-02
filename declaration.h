@@ -1,9 +1,3 @@
-
-
-
-
-
-
 #include <cstdint>
 #include <stdint.h>
 #include <stdlib.h>
