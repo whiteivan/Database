@@ -28,8 +28,8 @@ set(SERVER_SOURCES
     src/write_all.cpp
 )
 
-add_executable(client ${CLIENT_SOURCES})
-add_executable(server ${SERVER_SOURCES})
+add_executable(client.out ${CLIENT_SOURCES})
+add_executable(server.out ${SERVER_SOURCES})
 
-set_target_properties(client PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
-set_target_properties(server PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+set_target_properties(client.out PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+set_target_properties(server.out PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
