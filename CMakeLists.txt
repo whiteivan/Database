@@ -18,6 +18,7 @@ set(CLIENT_SOURCES
     src/msg.cpp
     src/read_full.cpp
     src/write_all.cpp
+    src/query.cpp
 )
 
 set(SERVER_SOURCES
