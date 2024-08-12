@@ -26,6 +26,7 @@ set(SERVER_SOURCES
     src/msg.cpp
     src/read_full.cpp
     src/write_all.cpp
+    src/one_request.cpp
 )
 
 add_executable(client.out ${CLIENT_SOURCES})
