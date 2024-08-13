@@ -28,6 +28,7 @@ set(SERVER_SOURCES
     src/read_full.cpp
     src/write_all.cpp
     src/one_request.cpp
+    src/fd_set_nb.cpp
 )
 
 add_executable(client.out ${CLIENT_SOURCES})
